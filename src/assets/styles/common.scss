@@ -1,0 +1,27 @@
+$color-white: #ffffff;
+$color-black: #000000;
+$color-red: #ed4014;
+$color-dark: #909399;
+$color-grey: #cccccc;
+$color-primary: #3E73E3;
+
+$background-color-light: rgba(62,115,227,0.05);
+$background-color-dark: #c0c0c0;
+$background: #222F76;
+$border-color: #dcdee2;
+$title-color: #17233d;
+$text-color: #515a6e;
+$shadow-color: rgba(163, 163, 163, 0.50);;
+
+
+@mixin box-shadow {
+  background: $color-white;
+  box-shadow: 0 1px 10px 0 $shadow-color;
+  border-radius: 6px;
+}
+
+@mixin text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

@@ -1,0 +1,85 @@
+@import "common";
+// 操作按钮
+.save-btn {
+  float: right;
+  padding: 8px 12px;
+  margin-top: 16px;
+}
+
+.classification-add-btn {
+  width: calc(100% - 16px);
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  border: 1px $border-color dashed;
+  background-color: $color-white;
+  margin: 12px 8px;
+  cursor: pointer;
+  outline: none;
+}
+
+// 树的样式
+.tree-main {
+  height: 100%;
+  .tree-sign {
+    color: $color-red;
+  }
+
+  .tree-tooltip {
+    display: block;
+    position: absolute;
+    z-index: 1000;
+    width: 120px;
+    padding: 0;
+    margin: 0 auto;
+    background-color: white;
+    border: 1px solid $border-color;
+    border-radius: 4px;
+
+    li {
+      display: block;
+      font-size: 16px;
+      line-height: 30px;
+      text-align: center;
+      cursor: pointer;
+
+      &:hover {
+        color: $color-primary;
+        background-color: $background-color-light;
+      }
+    }
+  }
+
+  .ztree-container {
+    //height: calc(100% - 45px);
+    //height: calc(100% - 45px);
+    margin-top: 12px;
+    padding: 14px;
+    border: 1px solid $border-color;
+  }
+}
+// 覆盖部分ztree样式
+.ztree {
+  overflow: hidden !important;
+  padding: 0 !important;
+  .tree-active {
+    background-color: #e5e5e5;
+
+    ul {
+      background-color: #fff !important;
+    }
+  }
+}
+
+.ztree li a.curSelectedNode_Edit {
+  width: calc(100% - 21px);
+  border-color: #2d8cf0 !important;
+}
+
+.ztree li a input.rename {
+  width: 100% !important;
+  height: 100% !important;
+  outline: none;
+  border: none !important;
+  background: none !important;
+}
